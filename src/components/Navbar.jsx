@@ -37,75 +37,83 @@ export default function Navbar() {
                 <a>Beranda</a>
               </li>
               <li>
-                <a>Pemerintahan</a>
-                <ul className="p-2 dropdown dropdown-right">
-                  <li>
-                    <a>Sejarah</a>
-                  </li>
-                  <li>
-                    <a>Visi dan Misi</a>
-                  </li>
-                  <li>
-                    <a>Perangkat Daerah</a>
-                  </li>
-                </ul>
+                <details>
+                  <summary>Pemerintahan</summary>
+                  <ul className="p-2">
+                    <li>
+                      <a>Sejarah</a>
+                    </li>
+                    <li>
+                      <a>Visi dan Misi</a>
+                    </li>
+                    <li>
+                      <a>Perangkat Daerah</a>
+                    </li>
+                  </ul>
+                </details>
               </li>
               <li>
                 <a>Layanan Publik</a>
               </li>
               <li>
-                <a>Publikasi</a>
-                <ul className="p-2 dropdown dropdown-right">
-                  <li>
-                    <a>Berita</a>
-                  </li>
-                  <li>
-                    <a>Pengumuman</a>
-                  </li>
-                  <li>
-                    <a>Agenda</a>
-                  </li>
-                  <li>
-                    <a>Statistik</a>
-                  </li>
-                </ul>
+                <details>
+                  <summary>Publikasi</summary>
+                  <ul className="p-2">
+                    <li>
+                      <a>Berita</a>
+                    </li>
+                    <li>
+                      <a>Pengumuman</a>
+                    </li>
+                    <li>
+                      <a>Agenda</a>
+                    </li>
+                    <li>
+                      <a>Statistik</a>
+                    </li>
+                  </ul>
+                </details>
               </li>
               <li>
-                <a>Dokumen & Peraturan</a>
-                <ul className="p-2 dropdown dropdown-right">
-                  <li>
-                    <a>Perda APBD 2024</a>
-                  </li>
-                  <li>
-                    <a>Perda APBD 2023</a>
-                  </li>
-                  <li>
-                    <a>APBD Kepri 2023</a>
-                  </li>
-                  <li>
-                    <a>Opini BPK RI 2023</a>
-                  </li>
-                  <li>
-                    <a>Laporan BPKD</a>
-                  </li>
-                  <li>
-                    <a>Produk Hukum</a>
-                  </li>
-                </ul>
+                <details>
+                  <summary>Dokumen & Peraturan</summary>
+                  <ul className="p-2">
+                    <li>
+                      <a>Perda APBD 2024</a>
+                    </li>
+                    <li>
+                      <a>Perda APBD 2023</a>
+                    </li>
+                    <li>
+                      <a>APBD Kepri 2023</a>
+                    </li>
+                    <li>
+                      <a>Opini BPK RI 2023</a>
+                    </li>
+                    <li>
+                      <a>Laporan BPKD</a>
+                    </li>
+                    <li>
+                      <a>Produk Hukum</a>
+                    </li>
+                  </ul>
+                </details>
               </li>
               <li>
-                <a>Galeri</a>
-                <ul className="p-2 dropdown dropdown-right">
-                  <li>
-                    <a>Foto & Video</a>
-                  </li>
-                  <li>
-                    <a>Aset MultiMedia</a>
-                  </li>
-                  <li>
-                    <a>AI Kepri</a>
-                  </li>
-                </ul>
+                <details>
+                  <summary>Galeri</summary>
+                  <ul className="p-2">
+                    <li>
+                      <a>Foto & Video</a>
+                    </li>
+                    <li>
+                      <a>Aset MultiMedia</a>
+                    </li>
+                    <li>
+                      <a>AI Kepri</a>
+                    </li>
+                  </ul>
+                </details>
               </li>
             </ul>
           </div>
