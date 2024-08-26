@@ -1,25 +1,59 @@
+import { TypewriterEffect } from "../components/ui/TypewriterEffectSmooth";
+import { PlaceholdersAndVanishInput } from "../components/ui/PlaceholdersAndVanishInput";
+
 export default function Home() {
+  const words = [
+    { text: "Selamat " },
+    { text: "Datang " },
+    { text: "di " },
+    { text: "Portal " },
+    { text: "Kepulauan " },
+    { text: "Riau" },
+  ];
+
+  const placeholders = [
+    "What's the first rule of Fight Club?",
+    "Who is Tyler Durden?",
+    "Where is Andrew Laeddis Hiding?",
+    "Write a Javascript method to reverse a string",
+    "How to assemble your own PC?",
+  ];
+
+  const handleChange = (e) => {
+    console.log(e.target.value);
+  };
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    console.log("submitted");
+  };
+
   return (
     <>
       <div className="relative">
-        {/* Background Image */}
         <img
           src="/bg-kepri.jpg"
           alt="Kepri"
           className="w-full h-screen object-cover"
         />
-
-        {/* Dark and Blur Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-20 backdrop-blur-sm z-0"></div>
-
-        {/* Main Text */}
-        <div className="absolute inset-0 flex items-center justify-center z-10">
-          <h1 className="text-white text-2xl lg:text-4xl font-bold">
-            Selamat Datang di Portal Kepulauan Riau
+        <div className="absolute inset-0 flex flex-col items-center justify-center z-10 text-center">
+          <h1 className="text-white text-lg lg:text-4xl font-bold mb-4">
+            <TypewriterEffect words={words} />
           </h1>
+          <p className="text-white dark:text-neutral-200 text-xs mb-10">
+            Temukan informasi publik terkini dari Pemerintah Daerah Provinsi
+            Kepulauan Riau
+          </p>
+          {/* Tambahkan form di sini agar berada di atas gambar */}
+          <div className=" w-3/4 lg:w-1/2">
+            <PlaceholdersAndVanishInput
+              placeholders={placeholders}
+              onChange={handleChange}
+              onSubmit={onSubmit}
+            />
+          </div>
         </div>
-
-        {/* Wave SVG */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="absolute -bottom-10 left-0 w-full"
