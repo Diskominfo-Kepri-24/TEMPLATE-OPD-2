@@ -79,8 +79,11 @@ export default function Navbar() {
                           <Link to={`/visi-misi`}>Visi & Misi</Link>
                         </li>
                         <li>
+                          <Link to={`/perangkat-daerah`}>Perangkat Daerah</Link>
+                        </li>
+                        <li>
                           <details>
-                            <summary>Perangkat Daerah</summary>
+                            <summary>Kepala Daerah</summary>
                             <ul className="p-2">
                               <li>
                                 <Link to={`/tim-percepatan-pembangunan`}>
@@ -204,8 +207,11 @@ export default function Navbar() {
                         <Link to={`/visi-misi`}>Visi & Misi</Link>
                       </li>
                       <li>
+                        <Link to={`/perangkat-daerah`}>Perangkat Daerah</Link>
+                      </li>
+                      <li>
                         <details>
-                          <summary>Perangkat Daerah</summary>
+                          <summary>Kepala Daerah</summary>
                           <ul className="p-2">
                             <li>
                               <Link to={`/tim-percepatan-pembangunan`}>
