@@ -31,13 +31,15 @@ export default function Navbar() {
         >
           <div className="container mx-auto flex items-center justify-between px-4 lg:px-8">
             <div className={`navbar-start`}>
-              <a>
-                <img
-                  src="/logo-navbar.png"
-                  alt="Logo"
-                  className="md:h-[60px] h-auto w-auto"
-                />
-              </a>
+              <div className={`${isScrolled ? "" : "rounded-lg bg-white"}`}>
+                <a>
+                  <img
+                    src="/logo-navbar.png"
+                    alt="Logo"
+                    className="md:h-[60px] h-auto w-auto"
+                  />
+                </a>
+              </div>
             </div>
             <div className="navbar-end flex items-center lg:hidden">
               <div className="dropdown dropdown-end">

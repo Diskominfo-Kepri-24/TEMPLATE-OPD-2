@@ -99,7 +99,7 @@ const NewsCarousel = () => {
                   <span>{news.author}</span>
                 </div>
                 {/* Read More Button */}
-                <button className="mt-2 text-sm bg-white text-black px-4 py-2 rounded-lg font-semibold shadow-lg transition duration-200 ease-in-out transform hover:bg-gray-200 hover:scale-105">
+                <button className="mt-2 text-sm bg-primary-color text-primary-text hover:bg-second-color  px-4 py-2 rounded-lg font-semibold shadow-lg transition duration-200 ease-in-out transform hover:scale-105">
                   Baca Selengkapnya
                 </button>
               </div>

@@ -19,11 +19,14 @@ export default function Home() {
   ];
 
   const placeholders = [
-    "What's the first rule of Fight Club?",
-    "Who is Tyler Durden?",
-    "Where is Andrew Laeddis Hiding?",
-    "Write a Javascript method to reverse a string",
-    "How to assemble your own PC?",
+    "Sejarah",
+    "Berita",
+    "APBD",
+    "PPID",
+    "Layanan",
+    "Instantsi",
+    "Laporan",
+    "IPKD",
   ];
 
   const handleChange = (e) => {
@@ -45,10 +48,10 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black bg-opacity-20 backdrop-blur-sm z-0"></div>
         <div className="absolute inset-0 flex flex-col items-center justify-center z-10 text-center">
-          <h1 className="text-white text-lg lg:text-4xl font-bold mb-4">
+          <h1 className="text-primary-text text-lg lg:text-4xl font-bold mb-4">
             <TypewriterEffect words={words} />
           </h1>
-          <p className="text-white dark:text-neutral-200 text-xs mb-10">
+          <p className="text-primary-text text-xs mb-10">
             Temukan informasi publik terkini dari Pemerintah Daerah Provinsi
             Kepulauan Riau
           </p>

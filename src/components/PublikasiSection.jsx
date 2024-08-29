@@ -117,10 +117,10 @@ export default function PublikasiSection() {
   return (
     <div className="bg-slate-50 pb-10">
       <div className="container mx-auto px-4">
-        <h1 className="text-2xl md:text-3xl font-bold text-center mb-4">
+        <h1 className="text-2xl md:text-3xl font-bold  all-first  text-center mb-4">
           Publikasi Statistik
         </h1>
-        <h2 className="text-lg md:text-xl text-center text-gray-600 mb-8">
+        <h2 className="text-sm md:text-md text-center  all-first  text-gray-600 mb-8">
           Terbitan Publikasi Statistik di Provinsi Kepulauan Riau
         </h2>
         {/* TERBITAN KHUSUS */}
@@ -134,13 +134,13 @@ export default function PublikasiSection() {
             />
             {/* Judul dan Deskripsi */}
             <div className="w-full md:w-2/3 p-6">
-              <h3 className="text-lg md:text-xl font-bold mb-2">
+              <h3 className="text-lg md:text-xl font-bold mb-2  all-first ">
                 Statistik Sektoral Provinsi Kepulauan Riau Tahun 2023
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4  all-second ">
                 Oleh: Dinas Komunikasi dan Informatika Kepri
               </p>
-              <p className="text-gray-500 text-sm mb-4">
+              <p className="text-gray-500 text-sm mb-4 ">
                 Buku ini berisikan tentang data indikator kinerja yang bersumber
                 dari Organisasi Perangkat Daerah yang ada di Lingkungan
                 Pemerintahan Provinsi Kepulauan Riau dan beberapa Instansi
@@ -151,7 +151,7 @@ export default function PublikasiSection() {
                 dapat berubah setiap kurun waktu baik persemester ataupun
                 pertahun.
               </p>
-              <button className="bg-green-100 text-green-600 px-4 py-2 rounded">
+              <button className="bg-primary-color text-primary-text hover:bg-second-color px-4 py-2 rounded-lg">
                 Lihat Laporan Statistik Ini
               </button>
             </div>
@@ -161,7 +161,7 @@ export default function PublikasiSection() {
         {/* Terbitan BPS Kepri */}
         <div>
           <div className="flex items-center justify-between mb-4">
-            <h3 className="text-lg font-bold">Terbitan BPS Kepri</h3>
+            <h3 className="text-lg font-bold all-first">Terbitan BPS Kepri</h3>
             <div className="flex space-x-2">
               <button
                 onClick={handlePrevSlide}
@@ -205,11 +205,11 @@ export default function PublikasiSection() {
                         alt={card.title}
                         className="w-full h-32 object-cover mb-4"
                       />
-                      <h4 className="font-bold text-sm mb-2 break-words">
+                      <h4 className="font-bold text-sm mb-2 all-first break-words">
                         {card.title}
                       </h4>
                     </div>
-                    <p className="text-gray-500 text-xs mt-auto">
+                    <p className="all-third text-xs mt-auto">
                       Terbit: {card.date} • Size: {card.size}
                     </p>
                   </div>

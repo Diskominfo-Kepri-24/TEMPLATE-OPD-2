@@ -97,7 +97,7 @@ export default function WisataBudataHomePage() {
         <h1 className="text-2xl md:text-3xl font-bold text-center mb-4">
           Wisata & Budaya
         </h1>
-        <h2 className="text-lg md:text-xl text-center text-gray-600 mb-8">
+        <h2 className="text-sm md:text-md text-center text-gray-600 mb-8">
           Ayo berkunjung ke Kepri! Banyak cagar budaya, kuliner, dan objek
           menarik lainnya.
         </h2>
@@ -123,7 +123,7 @@ export default function WisataBudataHomePage() {
                   className="w-full h-40 md:h-60 object-cover transform transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-10 group-hover:bg-opacity-30 transition-opacity duration-500"></div>
-                <div className="absolute bottom-1/2 right-2 transform translate-y-1/2 bg-blue-500 px-2 py-1 text-white text-sm font-semibold">
+                <div className="absolute bottom-1/2 right-2 transform translate-y-1/2 bg-primary-color text-primary-text px-2 py-1  text-sm font-semibold">
                   {card.title}
                 </div>
               </div>

@@ -67,44 +67,40 @@ export default function PengumumanHomePage() {
   return (
     <div className="bg-slate-50 py-10">
       <div className="container mx-auto px-4">
-        <h1 className="text-2xl md:text-3xl font-bold text-center mb-4">
+        <h1 className="text-2xl md:text-3xl font-bold all-first text-center mb-4">
           Pengumuman Resmi
         </h1>
-        <h2 className="text-lg md:text-xl text-center text-gray-600 mb-8">
+        <h2 className="text-sm md:text-md text-center all-first mb-8">
           Lihat Pengumuman Resmi Dari OPD Provinsi Kepulauan Riau
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {cards.map((card, index) => (
             <div
               key={index}
-              className="bg-white shadow-lg rounded-lg overflow-hidden"
+              className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between h-full"
             >
               <img
                 src={card.imgSrc}
                 alt={card.title}
-                className="w-full h-40 object-cover"
+                className="w-full h-32 object-cover" // Menurunkan tinggi gambar untuk mengurangi tinggi card
               />
-              <div className="p-4">
+              <div className="p-4 flex-1">
                 <h3 className="text-lg font-semibold mb-2 break-words">
                   {card.title}
                 </h3>
-                <p className="text-gray-600 text-sm mb-2">
-                  {new Date(card.date).toLocaleDateString("id-ID", {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                  })}
-                </p>
-                <p className="text-gray-600 text-sm mb-2">{card.agency}</p>
-                <p className="text-gray-500 text-xs">
+              </div>
+              <div className="flex justify-between m-4 mt-auto">
+                <p className="all-second text-sm mb-2">{card.agency}</p>
+                <p className="all-third text-xs">
                   {timeAgo(card.date)} | {card.size}
                 </p>
               </div>
             </div>
           ))}
         </div>
+
         <div className="flex justify-center mt-8">
-          <button className="bg-blue-500 text-white px-4 py-2 rounded-lg flex items-center">
+          <button className="bg-primary-color text-primary-text hover:bg-second-color px-4 py-2 rounded-lg text-sm flex items-center">
             Lihat Pengumuman Lainya
           </button>
         </div>

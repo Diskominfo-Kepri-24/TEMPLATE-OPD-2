@@ -40,6 +40,12 @@ const NewsTabs = () => {
       time: "7 jam yang lalu",
       link: "#",
     },
+    {
+      title: "Berita Ke 7 ",
+      category: "Politik",
+      time: "7 jam yang lalu",
+      link: "#",
+    },
   ];
 
   const popularNews = [
@@ -79,6 +85,12 @@ const NewsTabs = () => {
       time: "6 jam yang lalu",
       link: "#",
     },
+    {
+      title: "Berita Populer Ketujuh",
+      category: "Pendidikan",
+      time: "6 jam yang lalu",
+      link: "#",
+    },
   ];
 
   const renderNewsList = (newsList) => {
@@ -91,8 +103,8 @@ const NewsTabs = () => {
             className="block border-b p-2 rounded hover:bg-gray-100 transition-colors duration-300"
           >
             <li>
-              <h4 className="font-semibold">{news.title}</h4>
-              <p className="text-sm text-gray-500">
+              <h4 className="font-semibold text-sm">{news.title}</h4>
+              <p className="text-xs text-gray-500">
                 {news.category} | {news.time}
               </p>
             </li>
@@ -108,8 +120,8 @@ const NewsTabs = () => {
         <button
           className={`py-2 px-4 mx-2 ${
             activeTab === "terbaru"
-              ? "border-b-2 border-blue-500 font-semibold text-blue-500 uppercase"
-              : "bg-gray-200 uppercase"
+              ? "border-b-2 border-primary-color font-semibold text-second-text uppercase"
+              : "text-all-third uppercase"
           }`}
           onClick={() => setActiveTab("terbaru")}
         >
@@ -118,8 +130,8 @@ const NewsTabs = () => {
         <button
           className={`py-2 px-4 mx-2 ${
             activeTab === "terpopuler"
-              ? "border-b-2 border-blue-500 font-semibold text-blue-500 uppercase"
-              : "bg-gray-200 uppercase"
+              ? "border-b-2 border-primary-color font-semibold text-second-text uppercase"
+              : "text-all-third uppercase"
           }`}
           onClick={() => setActiveTab("terpopuler")}
         >
