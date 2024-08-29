@@ -4,6 +4,9 @@ import { PlaceholdersAndVanishInput } from "../components/ui/PlaceholdersAndVani
 import KominfoWidget from "../components/KominfoWidget";
 import NewsCarousel from "../components/NewsCarousel";
 import NewsTabs from "../components/NewsTabs";
+import PublikasiSection from "../components/PublikasiSection";
+import PengumumanHomePage from "../components/PengumumanHomePage";
+import WisataBudataHomePage from "../components/WisataBudataHomePage";
 
 export default function Home() {
   const words = [
@@ -70,7 +73,7 @@ export default function Home() {
         </svg>
       </div>
       {/* Berita Section */}
-      <div className="relative bg-slate-200">
+      <div className="relative bg-slate-50">
         <div className="container bg-white mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8 relative z-20 -translate-y-1/3 rounded-2xl shadow-lg">
           {/* Column 1: Kominfo Widget */}
           <div className="rounded-lg h-full min-h-[200px] max-h-[500px]">
@@ -88,6 +91,12 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* SECTION PUBLIKASI */}
+
+      <PublikasiSection />
+      <PengumumanHomePage />
+      <WisataBudataHomePage />
     </>
   );
 }
