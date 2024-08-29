@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,6 +22,7 @@ export default function Navbar() {
 
   return (
     <>
+      <Link></Link>
       <div
         className={`fixed top-2 left-0 right-0 font-semibold z-50 flex justify-center transition-all duration-300 `}
       >
@@ -32,13 +34,13 @@ export default function Navbar() {
           <div className="container mx-auto flex items-center justify-between px-4 lg:px-8">
             <div className={`navbar-start`}>
               <div className={`${isScrolled ? "" : "rounded-lg bg-white"}`}>
-                <a>
+                <Link to={`/`}>
                   <img
                     src="/logo-navbar.png"
                     alt="Logo"
                     className="md:h-[60px] h-auto w-auto"
                   />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="navbar-end flex items-center lg:hidden">
@@ -64,42 +66,78 @@ export default function Navbar() {
                   className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
                 >
                   <li>
-                    <a>Beranda</a>
+                    <Link to={`/`}> Beranda</Link>
                   </li>
                   <li>
                     <details>
                       <summary>Pemerintahan</summary>
                       <ul className="p-2">
                         <li>
-                          <a>Sejarah</a>
+                          <Link to={`/sejarah`}>Sejarah</Link>
                         </li>
                         <li>
-                          <a>Visi dan Misi</a>
+                          <Link to={`/visi-misi`}>Visi & Misi</Link>
                         </li>
                         <li>
-                          <a>Perangkat Daerah</a>
+                          <details>
+                            <summary>Perangkat Daerah</summary>
+                            <ul className="p-2">
+                              <li>
+                                <Link to={`/tim-percepatan-pembangunan`}>
+                                  Tim Percepatan Pembangunan
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to={`/kepala-opd`}>Kepala OPD</Link>
+                              </li>
+                              <li>
+                                <Link to={`/ketua-dprd`}>Ketua DPRD</Link>
+                              </li>
+                              <li>
+                                <Link to={`/gubernur`}>Gubernur</Link>
+                              </li>
+                              <li>
+                                <Link to={`/wakil-gubernur`}>
+                                  Wakil Gubernur
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to={`/sekretariat-daerah`}>
+                                  Sekretariat Daerah
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to={`/asisten-sekretariat-daerah`}>
+                                  Asisten Sekretariat Daerah
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to={`/staff-ahli`}>Staff Ahli</Link>
+                              </li>
+                            </ul>
+                          </details>
                         </li>
                       </ul>
                     </details>
                   </li>
                   <li>
-                    <a>Layanan Publik</a>
+                    <Link to={`/layanan-publik`}> Layanan Publik</Link>
                   </li>
                   <li>
                     <details>
                       <summary>Publikasi</summary>
                       <ul className="p-2">
                         <li>
-                          <a>Berita</a>
+                          <Link to={`/berita`}>Berita</Link>
                         </li>
                         <li>
-                          <a>Pengumuman</a>
+                          <Link to={`/pengumuman`}>Pengumuman</Link>
                         </li>
                         <li>
-                          <a>Agenda</a>
+                          <Link to={`/agenda`}>Agenda</Link>
                         </li>
                         <li>
-                          <a>Statistik</a>
+                          <Link to={`/statistik`}>Statistik</Link>
                         </li>
                       </ul>
                     </details>
@@ -109,22 +147,24 @@ export default function Navbar() {
                       <summary>Dokumen & Peraturan</summary>
                       <ul className="p-2">
                         <li>
-                          <a>Perda APBD 2024</a>
+                          <Link to={`/perda-apbd-2024`}> Perda APBD 2024</Link>
                         </li>
                         <li>
-                          <a>Perda APBD 2023</a>
+                          <Link to={`/perda-apbd-2023`}> Perda APBD 2023</Link>
                         </li>
                         <li>
-                          <a>APBD Kepri 2023</a>
+                          <Link to={`/apbd-kepri-2023`}> APBD Kepri 2023</Link>
                         </li>
                         <li>
-                          <a>Opini BPK RI 2023</a>
+                          <Link to={`/opini-bpk-ri-2023`}>
+                            Opini BPK RI 2023
+                          </Link>
                         </li>
                         <li>
-                          <a>Laporan BPKD</a>
+                          <Link to={`/laporan-bpkd`}>Laporan BPKD</Link>
                         </li>
                         <li>
-                          <a>Produk Hukum</a>
+                          <Link to={`/produk-hukum`}>Produk Hukum</Link>
                         </li>
                       </ul>
                     </details>
@@ -134,13 +174,13 @@ export default function Navbar() {
                       <summary>Galeri</summary>
                       <ul className="p-2">
                         <li>
-                          <a>Foto & Video</a>
+                          <Link to={`/foto-video`}>Foto & Video</Link>
                         </li>
                         <li>
-                          <a>Aset MultiMedia</a>
+                          <Link to={`/aset-multimedia`}>Aset MultiMedia</Link>
                         </li>
                         <li>
-                          <a>AI Kepri</a>
+                          <Link to={`/ai-kepri`}>AI Kepri</Link>
                         </li>
                       </ul>
                     </details>
@@ -151,42 +191,76 @@ export default function Navbar() {
             <div className="navbar-center hidden lg:flex">
               <ul className="menu menu-horizontal px-1">
                 <li>
-                  <a>Beranda</a>
+                  <Link to={`/`}> Beranda</Link>
                 </li>
                 <li>
                   <details>
                     <summary>Pemerintahan</summary>
                     <ul className="p-2">
                       <li>
-                        <a>Sejarah</a>
+                        <Link to={`/sejarah`}>Sejarah</Link>
                       </li>
                       <li>
-                        <a>Visi dan Misi</a>
+                        <Link to={`/visi-misi`}>Visi & Misi</Link>
                       </li>
                       <li>
-                        <a>Perangkat Daerah</a>
+                        <details>
+                          <summary>Perangkat Daerah</summary>
+                          <ul className="p-2">
+                            <li>
+                              <Link to={`/tim-percepatan-pembangunan`}>
+                                Tim Percepatan Pembangunan
+                              </Link>
+                            </li>
+                            <li>
+                              <Link to={`/kepala-opd`}>Kepala OPD</Link>
+                            </li>
+                            <li>
+                              <Link to={`/ketua-dprd`}>Ketua DPRD</Link>
+                            </li>
+                            <li>
+                              <Link to={`/gubernur`}>Gubernur</Link>
+                            </li>
+                            <li>
+                              <Link to={`/wakil-gubernur`}>Wakil Gubernur</Link>
+                            </li>
+                            <li>
+                              <Link to={`/sekretariat-daerah`}>
+                                Sekretariat Daerah
+                              </Link>
+                            </li>
+                            <li>
+                              <Link to={`/asisten-sekretariat-daerah`}>
+                                Asisten Sekretariat Daerah
+                              </Link>
+                            </li>
+                            <li>
+                              <Link to={`/staff-ahli`}>Staff Ahli</Link>
+                            </li>
+                          </ul>
+                        </details>
                       </li>
                     </ul>
                   </details>
                 </li>
                 <li>
-                  <a>Layanan Publik</a>
+                  <Link to={`/layanan-publik`}> Layanan Publik</Link>
                 </li>
                 <li>
                   <details>
                     <summary>Publikasi</summary>
                     <ul className="p-2">
                       <li>
-                        <a>Berita</a>
+                        <Link to={`/berita`}>Berita</Link>
                       </li>
                       <li>
-                        <a>Pengumuman</a>
+                        <Link to={`/pengumuman`}>Pengumuman</Link>
                       </li>
                       <li>
-                        <a>Agenda</a>
+                        <Link to={`/agenda`}>Agenda</Link>
                       </li>
                       <li>
-                        <a>Statistik</a>
+                        <Link to={`/statistik`}>Statistik</Link>
                       </li>
                     </ul>
                   </details>
@@ -196,22 +270,22 @@ export default function Navbar() {
                     <summary>Dokumen & Peraturan</summary>
                     <ul className="p-2">
                       <li>
-                        <a>Perda APBD 2024</a>
+                        <Link to={`/perda-apbd-2024`}> Perda APBD 2024</Link>
                       </li>
                       <li>
-                        <a>Perda APBD 2023</a>
+                        <Link to={`/perda-apbd-2023`}> Perda APBD 2023</Link>
                       </li>
                       <li>
-                        <a>APBD Kepri 2023</a>
+                        <Link to={`/apbd-kepri-2023`}> APBD Kepri 2023</Link>
                       </li>
                       <li>
-                        <a>Opini BPK RI 2023</a>
+                        <Link to={`/opini-bpk-ri-2023`}>Opini BPK RI 2023</Link>
                       </li>
                       <li>
-                        <a>Laporan BPKD</a>
+                        <Link to={`/laporan-bpkd`}>Laporan BPKD</Link>
                       </li>
                       <li>
-                        <a>Produk Hukum</a>
+                        <Link to={`/produk-hukum`}>Produk Hukum</Link>
                       </li>
                     </ul>
                   </details>
@@ -221,13 +295,13 @@ export default function Navbar() {
                     <summary>Galeri</summary>
                     <ul className="p-2">
                       <li>
-                        <a>Foto & Video</a>
+                        <Link to={`/foto-video`}>Foto & Video</Link>
                       </li>
                       <li>
-                        <a>Aset MultiMedia</a>
+                        <Link to={`/aset-multimedia`}>Aset MultiMedia</Link>
                       </li>
                       <li>
-                        <a>AI Kepri</a>
+                        <Link to={`/ai-kepri`}>AI Kepri</Link>
                       </li>
                     </ul>
                   </details>
