@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const cards = [
   {
@@ -75,27 +76,31 @@ export default function PengumumanHomePage() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {cards.map((card, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between h-full"
-            >
-              <img
-                src={card.imgSrc}
-                alt={card.title}
-                className="w-full h-32 object-cover" // Menurunkan tinggi gambar untuk mengurangi tinggi card
-              />
-              <div className="p-4 flex-1">
-                <h3 className="text-lg font-semibold mb-2 break-words">
-                  {card.title}
-                </h3>
-              </div>
-              <div className="flex justify-between m-4 mt-auto">
-                <p className="all-second text-sm mb-2">{card.agency}</p>
-                <p className="all-third text-xs">
-                  {timeAgo(card.date)} | {card.size}
-                </p>
-              </div>
-            </div>
+            <>
+              <Link to={`/pengumuman/1`}>
+                <div
+                  key={index}
+                  className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between h-full"
+                >
+                  <img
+                    src={card.imgSrc}
+                    alt={card.title}
+                    className="w-full h-32 object-cover" // Menurunkan tinggi gambar untuk mengurangi tinggi card
+                  />
+                  <div className="p-4 flex-1">
+                    <h3 className="text-lg font-semibold mb-2 break-words">
+                      {card.title}
+                    </h3>
+                  </div>
+                  <div className="flex justify-between m-4 mt-auto">
+                    <p className="all-second text-sm mb-2">{card.agency}</p>
+                    <p className="all-third text-xs">
+                      {timeAgo(card.date)} | {card.size}
+                    </p>
+                  </div>
+                </div>
+              </Link>
+            </>
           ))}
         </div>
 

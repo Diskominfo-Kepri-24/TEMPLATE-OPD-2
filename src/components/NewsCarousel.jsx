@@ -1,6 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { FaClock, FaUser } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const responsive = {
   desktop: {
@@ -99,9 +100,11 @@ const NewsCarousel = () => {
                   <span>{news.author}</span>
                 </div>
                 {/* Read More Button */}
-                <button className="mt-2 text-sm bg-primary-color text-primary-text hover:bg-second-color  px-4 py-2 rounded-lg font-semibold shadow-lg transition duration-200 ease-in-out transform hover:scale-105">
-                  Baca Selengkapnya
-                </button>
+                <Link to={`/berita/1`}>
+                  <button className="mt-2 text-sm bg-primary-color text-primary-text hover:bg-second-color  px-4 py-2 rounded-lg font-semibold shadow-lg transition duration-200 ease-in-out transform hover:scale-105">
+                    Baca Selengkapnya
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

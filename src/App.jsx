@@ -10,6 +10,8 @@ import PerangkatDaerah from "./pages/PerangkatDaerah";
 import LayananPublik from "./pages/LayananPublik";
 import Berita from "./pages/Berita";
 import DetailBerita from "./components/DetailBerita";
+import Pengumuman from "./pages/Pengumuman";
+import DetailPengumuman from "./components/DetailPengumuman";
 function App() {
   return (
     <>
@@ -22,6 +24,8 @@ function App() {
         <Route path="/layanan-publik" element={<LayananPublik />} />
         <Route path="/berita" element={<Berita />} />
         <Route path="/berita/:id" element={<DetailBerita />} />
+        <Route path="/pengumuman" element={<Pengumuman />} />
+        <Route path="/pengumuman/:id" element={<DetailPengumuman />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
