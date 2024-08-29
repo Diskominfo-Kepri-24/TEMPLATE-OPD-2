@@ -100,7 +100,7 @@ const NewsTabs = () => {
           <a
             href={news.link}
             key={index}
-            className="block border-b p-2 rounded hover:bg-gray-100 transition-colors duration-300"
+            className="block border-b p-2 rounded hover:bg-color-hover transition-colors duration-300"
           >
             <li>
               <h4 className="font-semibold text-sm">{news.title}</h4>

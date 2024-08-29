@@ -11,6 +11,7 @@ export default {
         "primary-color": "#16A75C",
         "second-color": "#19B068",
         "primary-button": "#16A75C",
+        "color-hover": "#DCFCE7",
         "primary-text": "#ffffff",
         "second-button": "#DCFCE7",
         "second-text": "#4ABA73",
