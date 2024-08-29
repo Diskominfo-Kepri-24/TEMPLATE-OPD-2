@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import NotFound from "./components/NotFound";
 import Sejarah from "./pages/Sejarah";
+import VisiMisi from "./pages/VisiMisi";
 function App() {
   return (
     <>
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sejarah" element={<Sejarah />} />
+        <Route path="/visi-misi" element={<VisiMisi />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
