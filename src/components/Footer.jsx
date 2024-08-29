@@ -113,7 +113,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col-reverse justify-center pt-5 pb-10 border-t  border-white lg:flex-row">
             <p className="text-sm font-semibold text-primary-text">
-              Copyright © 2024 Template OPD Develop By Muhamad Nur Syami &
+              Copyright © 2024 Template OPD  By Muhamad Nur Syami &
               Mahadi Dwi Nugraha
             </p>
           </div>
