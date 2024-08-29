@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Berita() {
   const beritaUtama = {
     image:
@@ -116,9 +118,11 @@ export default function Berita() {
                     <p className="text-sm mt-2">
                       {beritaUtama.date} | Penulis: {beritaUtama.author}
                     </p>
-                    <button className="bg-primary-button text-primary-text mt-4 py-2 px-4 rounded">
-                      Baca Selengkapnya
-                    </button>
+                    <Link to={`/berita/1`}>
+                      <button className="bg-primary-button text-primary-text mt-4 py-2 px-4 rounded">
+                        Baca Selengkapnya
+                      </button>
+                    </Link>
                   </div>
                 </div>
 

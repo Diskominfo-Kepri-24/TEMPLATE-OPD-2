@@ -9,6 +9,7 @@ import VisiMisi from "./pages/VisiMisi";
 import PerangkatDaerah from "./pages/PerangkatDaerah";
 import LayananPublik from "./pages/LayananPublik";
 import Berita from "./pages/Berita";
+import DetailBerita from "./components/DetailBerita";
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
         <Route path="/perangkat-daerah" element={<PerangkatDaerah />} />
         <Route path="/layanan-publik" element={<LayananPublik />} />
         <Route path="/berita" element={<Berita />} />
+        <Route path="/berita/:id" element={<DetailBerita />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
