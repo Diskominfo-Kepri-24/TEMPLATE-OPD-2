@@ -8,6 +8,7 @@ import Sejarah from "./pages/Sejarah";
 import VisiMisi from "./pages/VisiMisi";
 import PerangkatDaerah from "./pages/PerangkatDaerah";
 import LayananPublik from "./pages/LayananPublik";
+import Berita from "./pages/Berita";
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
         <Route path="/visi-misi" element={<VisiMisi />} />
         <Route path="/perangkat-daerah" element={<PerangkatDaerah />} />
         <Route path="/layanan-publik" element={<LayananPublik />} />
+        <Route path="/berita" element={<Berita />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
