@@ -14,7 +14,7 @@ const cards = [
   {
     imgSrc:
       "https://plus.unsplash.com/premium_photo-1722077701586-a81474ac7289?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "IUOPOIPIOPIOPIPOPIOPIOPIOPIOIOPIOPIOPIO",
+    title: "Pengumuman Penting Mengenai Jadwal Ujian",
     date: "2024-08-23",
     agency: "Biro Informasi",
     size: "9.14 MB",
@@ -31,7 +31,7 @@ const cards = [
   {
     imgSrc:
       "https://plus.unsplash.com/premium_photo-1722077701586-a81474ac7289?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "QWEQWEWQEQWEQWEQWEQWEQEQWE",
+    title: "Pengumuman Kelulusan Siswa Tahun Ajaran 2024",
     date: "2024-08-23",
     agency: "Biro Umum",
     size: "9.14 MB",
@@ -39,7 +39,7 @@ const cards = [
   {
     imgSrc:
       "https://plus.unsplash.com/premium_photo-1722077701586-a81474ac7289?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "ASKDJASLKDJKASLDJLASJDKASJDASDASD",
+    title: "Pengumuman Kegiatan Masa Orientasi Siswa Baru",
     date: "2024-08-23",
     agency: "Biro Hukum",
     size: "9.14 MB",
@@ -47,7 +47,7 @@ const cards = [
   {
     imgSrc:
       "https://plus.unsplash.com/premium_photo-1722077701586-a81474ac7289?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "MNCNVKCNVKVCJNBKJCVBKNVCBJVCNB",
+    title: "Pengumuman Kegiatan Kemerdekaan 17 Agustus tahun 1945",
     date: "2024-08-23",
     agency: "Biro Perencanaan",
     size: "9.14 MB",

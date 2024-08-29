@@ -18,7 +18,7 @@ export default function PublikasiSection() {
     {
       imgSrc:
         "https://plus.unsplash.com/premium_photo-1722077701586-a81474ac7289?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "IUOPOIPIOPIOPIPOPIOPIOPIOPIOIOPIOPIOPIO",
+      title: "Edisi Spesial: Menyongsong Tahun Ajaran Baru",
       date: "2024-08-23",
       size: "9.14 MB",
     },
@@ -41,42 +41,42 @@ export default function PublikasiSection() {
     {
       imgSrc:
         "https://plus.unsplash.com/premium_photo-1722077701586-a81474ac7289?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "QWEQWEWQEQWEQWEQWEQWEQEQWE",
+      title: "Laporan Tahunan: Prestasi dan Pencapaian Sekolah",
       date: "2024-08-23",
       size: "9.14 MB",
     },
     {
       imgSrc:
         "https://plus.unsplash.com/premium_photo-1722077701586-a81474ac7289?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "ASKDJASLKDJKASLDJLASJDKASJDASDASD",
+      title: "Edisi Khusus: Kegiatan Ekstrakurikuler dan Acara Sekolah",
       date: "2024-08-23",
       size: "9.14 MB",
     },
     {
       imgSrc:
         "https://plus.unsplash.com/premium_photo-1722077701586-a81474ac7289?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "MNCNVKCNVKVCJNBKJCVBKNVCBJVCNB",
+      title: "Terbitan Agustus: Ulasan Kegiatan dan Event Mendatang",
       date: "2024-08-23",
       size: "9.14 MB",
     },
     {
       imgSrc:
         "https://plus.unsplash.com/premium_photo-1722077701586-a81474ac7289?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "XNCBVNXCBVXNCVXCVXCVXCVXCVXCV",
+      title: "Kumpulan Berita: Inovasi dan Perubahan di Sekolah",
       date: "2024-08-23",
       size: "9.14 MB",
     },
     {
       imgSrc:
         "https://plus.unsplash.com/premium_photo-1722077701586-a81474ac7289?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "QWEQWEWQEQWEQWEQWEQWEQEQWE",
+      title: "Rilis Terbaru: Program dan Agenda Mendatang",
       date: "2024-08-23",
       size: "9.14 MB",
     },
     {
       imgSrc:
         "https://plus.unsplash.com/premium_photo-1722077701586-a81474ac7289?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "ASKDJASLKDJKASLDJLASJDKASJDASDASD",
+      title: "Rilis Khusus: Evaluasi dan Perencanaan Tahun Akademik",
       date: "2024-08-23",
       size: "9.14 MB",
     },
